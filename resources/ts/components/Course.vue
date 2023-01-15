@@ -4,6 +4,7 @@ import { BanknotesIcon, ClockIcon } from "@heroicons/vue/24/solid";
 const props = defineProps<{
     data: Training;
 }>();
+
 </script>
 
 <template>

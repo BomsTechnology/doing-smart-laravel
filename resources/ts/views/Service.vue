@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import bg from "@/assets/bg4.png";
-import Banner from "@/components/Banner.vue";
+import Banner from "@/components/utils/Banner.vue";
 import Link from "../types/Link";
 import Service from "@/components/Service.vue";
 import { PhoneArrowUpRightIcon } from "@heroicons/vue/24/outline";

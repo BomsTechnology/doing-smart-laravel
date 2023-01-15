@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Banner from "@/components/Banner.vue";
+import Banner from "@/components/utils/Banner.vue";
 import Link from "../types/Link";
 import Accompagnement from "@/components/services/Accompagnement.vue";
 import { useServiceStore } from "../stores/servicesStore";

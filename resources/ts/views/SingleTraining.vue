@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Banner from "@/components/Banner.vue";
+import Banner from "@/components/utils/Banner.vue";
 import Link from "../types/Link";
 import { useTrainingStore } from "../stores/trainingsStore";
 import Training from "../types/Training";
@@ -143,7 +143,7 @@ watch(props, async function (newProps, oldProps) {
 
                     <a
                         :href="item[0].registerLink"
-                        class="rounded-full shadow w-1/3 hover:shadow-lg flex bg-smart-black hover:bg-smart-blue-2 px-4 py-3 text-white uppercase font-medium text-xs sm:text-sm space-x-3 justify-center !mt-12 mx-auto"
+                        class="rounded-full shadow w-60 hover:shadow-lg flex bg-smart-black hover:bg-smart-blue-2 px-4 py-3 text-white uppercase font-medium text-xs sm:text-sm space-x-3 justify-center !mt-12 mx-auto"
                     >
                         <span><CheckCircleIcon class="h-5 w-5" /></span>
                         <span>Je m'inscris</span>

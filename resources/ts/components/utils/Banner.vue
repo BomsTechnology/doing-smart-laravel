@@ -1,15 +1,13 @@
 <script setup lang="ts">
 import bg from "@/assets/bg1.jpg";
 import { HomeIcon, ChevronRightIcon } from "@heroicons/vue/24/outline";
-import Link from "../types/Link";
+import Link from "../../types/Link";
 
-const props = defineProps({
-    title: { required: true, type: String },
-    links: {
-        type: Array<Link>,
-        required: true,
-    },
-});
+const props = defineProps<{
+    title: string ,
+    links: Link[],
+ 
+}>();
 </script>
 
 <template>

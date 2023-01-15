@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import Banner from "@/components/Banner.vue";
+import Banner from "@/components/utils/Banner.vue";
+import Error from "@/components/utils/Error.vue";
+import Sucess from "@/components/utils/Sucess.vue";
+import axios from "axios";
 import Link from "../types/Link";
 import {
   UserIcon,
@@ -9,12 +12,37 @@ import {
   PencilIcon,
   ClockIcon,
 } from "@heroicons/vue/24/solid";
+import { reactive,ref } from "vue";
+
+const loading = ref<boolean>(false);
+const isSend = ref<boolean>(false);
+const errors = ref<string[]>([]);
+const contactData = reactive({
+  name: '',
+  email:'',
+  phone:'',
+  message:''
+})
 const links: Array<Link> = [
   {
     label: "Contact",
     route: "contact",
   },
 ];
+
+async function sendContact() {
+  loading.value = true 
+  errors.value = [];
+  await axios.post('api/contact', {...contactData}).then((res) => { isSend.value = true }).catch((err) => {
+    if (err.response.status == 422) {
+                    for (const key in err.response.data.errors)
+                        errors.value.push(err.response.data.errors[key][0]);
+                } else {
+                    errors.value.push(err.response.data.message);
+                }
+  });
+  loading.value = false
+}
 </script>
 
 <template>
@@ -172,7 +200,9 @@ const links: Array<Link> = [
                 <span class="text-smart-blue">Contacter</span> & S'unir
               </h1>
             </div>
-            <form>
+            <Error  :errors="errors"/>
+            <Sucess v-if="isSend" />
+            <form v-else @submit.prevent="sendContact">
               <div class="grid md:grid-cols-2 gap-6">
                 <div>
                   <label for="name" class="text-sm font-semibold">Nom</label>
@@ -182,7 +212,9 @@ const links: Array<Link> = [
                     />
                     <input
                       type="text"
+                      required
                       placeholder="Nom"
+                      v-model="contactData.name"
                       id="name"
                       class="py-4 text-sm px-2 rounded-full bg-white w-full pl-12 focus:outline-none border focus:border-white focus:ring focus:ring-custom-yellow/80"
                     />
@@ -198,7 +230,9 @@ const links: Array<Link> = [
                     />
                     <input
                       type="email"
+                      required
                       placeholder="E-mail"
+                      v-model="contactData.email"
                       id="email"
                       class="py-4 text-sm px-2 rounded-full bg-white w-full pl-12 focus:outline-none border focus:border-white focus:ring focus:ring-custom-yellow/80"
                     />
@@ -214,8 +248,7 @@ const links: Array<Link> = [
                     />
                     <input
                       type="text"
-                      id="phone"
-                      placeholder="Téléphone"
+                      id="phone" required   v-model="contactData.phone"                   placeholder="Téléphone"
                       class="py-4 text-sm pr-2 rounded-full bg-white w-full pl-12 focus:outline-none border focus:border-white focus:ring focus:ring-custom-yellow/80"
                     />
                   </div>
@@ -232,16 +265,19 @@ const links: Array<Link> = [
                   <textarea
                     name="message"
                     id="message"
+                    required
+                    v-model="contactData.message"
                     class="py-4 text-sm rounded-3xl pr-2 w-full h-52 pl-12 focus:outline-none border focus:border-white focus:ring focus:ring-custom-yellow/80"
                   ></textarea>
                 </div>
               </div>
               <div class="mt-10">
                 <button
-                  type="button"
+                  type="submit"
                   class="bg-smart-blue py-4 px-6 w-full border text-white border-smart-blue hover:bg-transparent transition-colors hover:text-smart-blue rounded-full"
                 >
-                  Envoyer
+                <span v-if="loading">Envoi en cours...</span>  
+                <span v-else>Envoyer</span>
                 </button>
               </div>
             </form>

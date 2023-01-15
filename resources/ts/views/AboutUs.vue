@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Teams from "@/components/home/Teams.vue";
-import Banner from "@/components/Banner.vue";
+import Banner from "@/components/utils/Banner.vue";
 import { CheckCircleIcon, PlayCircleIcon } from "@heroicons/vue/24/solid";
 import Link from "../types/Link";
 const links: Array<Link> = [

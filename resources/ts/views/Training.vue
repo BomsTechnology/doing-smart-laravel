@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import Banner from "@/components/Banner.vue";
+import Banner from "@/components/utils/Banner.vue";
 import Link from "../types/Link";
-import Training from "@/components/Training.vue";
 import { useTrainingStore } from "../stores/trainingsStore";
 import Course from "@/components/Course.vue";
 const links: Array<Link> = [
