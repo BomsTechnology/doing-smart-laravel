@@ -58,11 +58,8 @@ import { CheckCircleIcon, PlayCircleIcon } from "@heroicons/vue/24/solid";
             </h1>
             <p class="py-6 text-gray-500">
                 Une équipe d’expert en marketing digital qui a pour objectif
-                d’accompagner les entreprises dans l’atteinte déjà deux
-                objectifs à travers la communication digitale. Nous mettons un
-                point d’honneur a vous donner une identité unique et
-                professionnelle , à vous rendre plus proche de votre clientèle
-                et à accroître votre visibilité à l’international. <br />
+                d’accompagner les entreprises dans l’atteinte de vos
+                objectifs à travers la communication digitale.  <br />
                 <br />
                 Nous mettons un point d’honneur a vous donner une identité
                 unique et professionnelle , à vous rendre plus proche de votre

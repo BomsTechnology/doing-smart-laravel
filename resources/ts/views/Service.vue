@@ -96,10 +96,10 @@ const serviceStore = useServiceStore();
               class="border-gray-200 rounded-full h-full w-full border-4 transition-all duration-500 hover:border-smart-blue flex justify-center items-center flex-col text-center"
             >
               <h1 class="text-xl font-bold">Projet de recherche</h1>
-              <p class="mt-4 text-sm px-8 text-gray-500">
+             <!--  <p class="mt-4 text-sm px-8 text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Exercitationem alias labore modi cum architecto consectetur
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
@@ -116,10 +116,10 @@ const serviceStore = useServiceStore();
               class="border-gray-200 rounded-full h-full w-full border-4 transition-all duration-500 hover:border-smart-blue flex justify-center items-center flex-col text-center"
             >
               <h1 class="text-xl font-bold">Evaluer les plans</h1>
-              <p class="mt-4 text-sm px-8 text-gray-500">
+            <!--   <p class="mt-4 text-sm px-8 text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Exercitationem alias labore modi cum architecto consectetur
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
@@ -136,10 +136,10 @@ const serviceStore = useServiceStore();
               class="border-gray-200 rounded-full h-full w-full border-4 transition-all duration-500 hover:border-smart-blue flex justify-center items-center flex-col text-center"
             >
               <h1 class="text-xl font-bold">Meilleurs résultats</h1>
-              <p class="mt-4 text-sm px-8 text-gray-500">
+              <!--   <p class="mt-4 text-sm px-8 text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Exercitationem alias labore modi cum architecto consectetur
-              </p>
+              </p> -->
             </div>
           </div>
         </div>

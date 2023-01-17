@@ -22,7 +22,7 @@ class SubscriptionController extends Controller
             'email' => $request->email,
             'count' => Subcription::all()->count()
         ];
-        Notification::route('mail', 'marcsigha@gmail.com')->notify(new SubscrioptionNotification($data));
+        Notification::route('mail', 'contactdoingsmart@gmail.com')->notify(new SubscrioptionNotification($data));
         $response = [
             'status' => true,
             'message' => 'Subscription message Send success',

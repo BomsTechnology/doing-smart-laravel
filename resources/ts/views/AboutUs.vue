@@ -87,7 +87,7 @@ const links: Array<Link> = [
                 >
                     <div class="bg-white shadow-xl rounded-3xl p-4">
                         <div
-                            class="flex lg:flex-row justify-center items-center flex-col lg:items-start lg:space-x-3 lg:space-y-0 space-y-3"
+                            class="flex lg:flex-row justify-center items-center flex-col  lg:space-x-3 lg:space-y-0 space-y-3"
                         >
                             <div
                                 class="lg:w-1/4 w-full flex justify-center items-center"
@@ -106,16 +106,16 @@ const links: Array<Link> = [
                                 <h3 class="font-bold text-gray-900 text-xl">
                                     Meilleur prix garanti
                                 </h3>
-                                <p class="text-gray-500 text-sm mt-2">
+                                <!--   <p class="text-gray-500 text-sm mt-2">
                                     Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Atque quos
-                                </p>
+                                </p>-->
                             </div>
                         </div>
                     </div>
                     <div class="bg-white shadow-xl rounded-3xl p-4">
                         <div
-                            class="flex lg:flex-row justify-center items-center flex-col lg:items-start lg:space-x-3 lg:space-y-0 space-y-3"
+                            class="flex lg:flex-row justify-center items-center flex-col lg:space-x-3 lg:space-y-0 space-y-3"
                         >
                             <div
                                 class="lg:w-1/4 w-full flex justify-center items-center"
@@ -134,16 +134,16 @@ const links: Array<Link> = [
                                 <h3 class="font-bold text-gray-900 text-xl">
                                     Analyse financière
                                 </h3>
-                                <p class="text-gray-500 text-sm mt-2">
+                              <!--   <p class="text-gray-500 text-sm mt-2">
                                     Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Atque quos
-                                </p>
+                                </p>-->
                             </div>
                         </div>
                     </div>
                     <div class="bg-white shadow-xl rounded-3xl p-4">
                         <div
-                            class="flex lg:flex-row justify-center items-center flex-col lg:items-start lg:space-x-3 lg:space-y-0 space-y-3"
+                            class="flex lg:flex-row justify-center items-center flex-col  lg:space-x-3 lg:space-y-0 space-y-3"
                         >
                             <div
                                 class="lg:w-1/4 w-full flex justify-center items-center"
@@ -162,10 +162,10 @@ const links: Array<Link> = [
                                 <h3 class="font-bold text-gray-900 text-xl">
                                     Equipe professionelle
                                 </h3>
-                                <p class="text-gray-500 text-sm mt-2">
+                             <!--    <p class="text-gray-500 text-sm mt-2">
                                     Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Atque quos
-                                </p>
+                                </p>-->
                             </div>
                         </div>
                     </div>

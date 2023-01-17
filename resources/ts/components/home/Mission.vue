@@ -31,14 +31,11 @@ import bg from "@/assets/bg2.png";
                         <h1
                             class="font-bold lg:text-4xl text-center text-2xl md:text-3xl"
                         >
-                            <span class="text-smart-blue">Mission</span> ce que
-                            nous visons pour vous
+                             Ce que
+                            nous visons <br> pour vous
                         </h1>
                     </div>
-                    <!-- <p class="w-full lg:px-20 px-10 text-center mt-6">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Eligendi esse quasi labore mollitia,
-                    </p> -->
+                 
                 </div>
             </div>
             <div class="lg:ml-10 lg:mt-0 mt-8">
@@ -65,7 +62,7 @@ import bg from "@/assets/bg2.png";
                             </h1>
                             <p class="text-sm mt-1 text-gray-200">
                                 Nous avons à cœur de vous donner une visibilité
-                                à Nulle frontières pour vous faire connaître de
+                                à nulle frontières pour vous faire connaître par
                                 tous vos potentiels clients.
                             </p>
                         </div>

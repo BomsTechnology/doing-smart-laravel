@@ -6,7 +6,7 @@ const teamStore = useTeamStore();
 </script>
 
 <template>
-  <div class="w-full py-10 xl:px-36 md:px-10 px-4 relative bg-gray-100">
+  <div class="w-full py-20 xl:px-36 md:px-10 px-4 relative  bg-gray-100">
     <div class="w-full flex justify-center">
       <div
         class="rounded-full shadow bg-white px-4 py-2 mx-auto text-gray-500 uppercase font-medium text-xs sm:text-sm inline-block"

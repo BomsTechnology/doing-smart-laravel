@@ -30,13 +30,13 @@ export default [
     youtube: "",
     twitter: "",
   },
-  {
-    image: "",
-    name: "xxxxxxxxx",
-    post: "xxxxxxxxx",
-    facebook: "",
-    instagram: "",
-    youtube: "",
-    twitter: "",
-  },
+  //{
+  //  image: "",
+ //   name: "xxxxxxxxx",
+ //   post: "xxxxxxxxx",
+//    facebook: "",
+//    instagram: "",
+ //   youtube: "",
+ //   twitter: "",
+ // },
 ];

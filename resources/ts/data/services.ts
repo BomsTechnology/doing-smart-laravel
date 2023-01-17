@@ -16,14 +16,14 @@ export default [
         description: "string",
         route: "single-service",
     },
-    {
-        image: Community,
-        shortName: "Community Management",
-        longName: "Community Management",
-        slug: "community-management",
-        description: "",
-        route: "",
-    },
+   // {
+    //     image: Community,
+   //      shortName: "Community Management",
+   //      longName: "Community Management",
+  //       slug: "community-management",
+  //       description: "",
+ //        route: "",
+  //   },
 
     {
         image: Staff,
